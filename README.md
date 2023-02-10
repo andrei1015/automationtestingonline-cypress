@@ -263,8 +263,6 @@ Prerequisites:
 - Click the **Create** button
 - Go to the main page
 - Assert the newly created room is present on the main page -->
-
-
  
 ## Issues I found
 
@@ -275,3 +273,5 @@ Prerequisites:
 3. The error messages from the booking form don't mention the field where the error appeared
 
 3. Can't seem to be able to select a single day, maybe by design?
+
+4. The database resets every 10 minutes, this can cause issues. In a normal environment I would also do a cleanup in the successful booking test, to make sure there are no collisions when running the test multiple times. 
