@@ -9,9 +9,9 @@ const phone = faker.phone.number('+31#########')
 const subject = faker.random.words(3)
 const message = faker.random.words(20)
 
-describe('make a successful booking', () => {
+describe('send a message', () => {
 
-    Cypress.on('uncaught:exception', (err, runnable) => { // the test page has cors errors and js errors that crash cypress, becausee of the ads
+    Cypress.on('uncaught:exception', (err, runnable) => {
         return false;
     });
 
