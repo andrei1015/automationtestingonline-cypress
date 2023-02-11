@@ -1,4 +1,6 @@
-import { faker } from '@faker-js/faker'
+import {
+    faker
+} from '@faker-js/faker'
 
 
 const name = faker.name.firstName() + ' ' + faker.name.lastName()
@@ -11,7 +13,7 @@ describe('make a successful booking', () => {
 
     Cypress.on('uncaught:exception', (err, runnable) => { // the test page has cors errors and js errors that crash cypress, becausee of the ads
         return false;
-      });
+    });
 
     it('Go to page', () => {
         cy.visit('https://automationintesting.online/')
