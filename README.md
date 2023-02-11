@@ -275,3 +275,5 @@ Prerequisites:
 3. Can't seem to be able to select a single day, maybe by design?
 
 4. The database resets every 10 minutes, this can cause issues. In a normal environment I would also do a cleanup in the successful booking test, to make sure there are no collisions when running the test multiple times. 
+
+5. The admin login page performs a request to `/validate` on page entry, so I had to add a workaround to ignore it
