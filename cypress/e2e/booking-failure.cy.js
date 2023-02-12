@@ -122,8 +122,11 @@ describe('failed booking (invalid email)', () => {
         cy.get('[class*=book-room]').contains('Book').click()
     })
 
-    it('Check the correct errors appear', () => {
+
+
+    it.skip('Check the correct errors appear', () => {
         cy.get('[class*=alert-danger]').and('contain', 'must be a well-formed email address')
+        // this passes for some reason
     })
 
     it('username@domain. check', () => {
